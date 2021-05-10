@@ -59,7 +59,7 @@ set cursorline "line display
 set showmatch "highlight matching brackets
 set hlsearch "highlight search matches
 set hidden
-set mouse=a
+set mouse=r "use mode r, allows for copy/paste mouse interactions
 set noshowmode
 set noshowmatch
 set nolazyredraw
