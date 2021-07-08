@@ -32,3 +32,21 @@ cp ./dotfiles/.vimrc ~/.vimrc
 # copy the tmux configuration
 cp ./dotfiles/.tmux.conf ~/.tmux.conf
 ```
+
+Now open up vim and use the command `:PlugUpdate` to update plugins.
+
+For tmux, make sure `tpm` is installed:
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+Now start `tmux`, and install the tpm plugins listed in `.tmux.conf`:
+```shell
+#start tmux
+tmux source ~/.tmux.conf
+```
+now from within `tmux`:
+```shell
+#prefix + I to intall tpm plugins
+```
+
+
