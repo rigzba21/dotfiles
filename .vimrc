@@ -46,11 +46,20 @@ filetype off
 "fix backspace in MacOS
 set backspace=indent,eol,start
 filetype plugin indent on
-syntax enable
-set tabstop=4 "spaces per TAB char
-set softtabstop=4 "editor spacing for TAB
-set shiftwidth=4
-set expandtab "sets tabs into spaces (i.e. for Python)
+#syntax enable
+#set tabstop=4 "spaces per TAB char
+#set softtabstop=4 "editor spacing for TAB
+#set shiftwidth=4
+
+# Linux Kernel Development recommended settings
+syntax on
+set title
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
+set noexpandtab 
+
+#set expandtab "sets tabs into spaces (i.e. for Python)
 set autoindent
 set smartindent
 set number "line #s
