@@ -24,7 +24,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 "Golang
-"Plug 'faith/vim-go', { 'tag': '*' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 "Rust
 Plug 'rust-lang/rust.vim'
@@ -86,8 +86,10 @@ set smartcase
 colorscheme dracula
 
 " Start NERDTree. If a file is specified, move the cursor to its window.
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+" set NERDTree to show hidden files
+let NERDTreeShowHidden=1
 
 "ALE
 let g:ale_lint_on_enter = 0
