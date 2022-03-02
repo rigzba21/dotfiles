@@ -55,6 +55,11 @@ set softtabstop=4 "editor spacing for TAB
 set shiftwidth=4
 set expandtab "sets tabs into spaces (i.e. for Python)
 
+
+"split configuration
+set splitbelow
+set splitright
+
 " Linux Kernel Development recommended settings
 "syntax on
 "set title
