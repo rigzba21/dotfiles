@@ -80,6 +80,7 @@ set mouse=r "use mode r, allows for copy/paste mouse interactions
 set noshowmode
 set noshowmatch
 set nolazyredraw
+set pastetoggle=<F3> "F3 to turn toggle  autoindent when pasting code
 
 "turn off backup
 set nobackup
